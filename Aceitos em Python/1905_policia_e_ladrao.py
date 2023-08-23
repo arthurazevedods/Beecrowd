@@ -36,7 +36,7 @@ def busca(matriz,coordenadas,x,y,winner):
             
     return winner
 
-T = int(input())
+T = int(input()) #quantos jogos
 
 
 for i in range(T):
@@ -47,8 +47,8 @@ for i in range(T):
     while coluna < 5:
         
         linha = input().split()
-        linha = list(int(i) for i in linha)
-        temp = []
+        linha = list(int(i) for i in linha) #converter para inteiro
+        temp = [] #lista temporaria de coordenadas
         if linha:
             for i in range(len(linha)):
                 temp.append(coordenada())
